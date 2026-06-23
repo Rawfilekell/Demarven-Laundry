@@ -39,14 +39,7 @@
 /* ---------- RESET ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body {
-  font-family: var(--font-body);
-  color: var(--dark);
-  background: var(--white);
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
+body {font-family: var(--font-body);color: var(--dark);line-height: 1.65;-webkit-font-smoothing: antialiased;overflow-x: hidden;background: #eaf9ff;}
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
@@ -106,38 +99,13 @@ input, textarea, select {
   margin-bottom: .6rem;
 }
 .section-eyebrow.light { color: rgba(255,255,255,.75); }
-.section-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--dark);
-}
+.section-title { font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; line-height: 1.2;color: var(--dark);}
 .section-title.light { color: var(--white); }
-.section-sub {
-  margin-top: .75rem;
-  color: var(--mid);
-  font-size: 1.05rem;
-  max-width: 540px;
-  margin-left: auto;
-  margin-right: auto;
-}
+.section-sub {margin-top: .75rem; color: var(--mid); font-size: 1.05rem; max-width: 540px; margin-left: auto; margin-right: auto;}
 .section-cta { text-align: center; margin-top: 2.5rem; }
 
 /* ---------- BUTTONS ---------- */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  padding: .75rem 1.75rem;
-  border-radius: var(--radius-full);
-  font-size: .95rem;
-  font-weight: 600;
-  transition: all var(--transition);
-  white-space: nowrap;
-  cursor: pointer;
-  border: 2px solid transparent;
-}
+.btn {display: inline-flex;align-items: center;gap: .5rem;padding: .75rem 1.75rem;border-radius: var(--radius-full);font-size: .95rem;font-weight: 600;transition: all var(--transition);white-space: nowrap;cursor: pointer;border: 2px solid transparent;}
 .btn-lg  { padding: .9rem 2.2rem; font-size: 1.05rem; }
 .btn-sm  { padding: .45rem 1rem; font-size: .82rem; }
 .btn-block { width: 100%; justify-content: center; }
@@ -297,10 +265,13 @@ input, textarea, select {
   min-height: calc(100vh - 112px);
   display: flex;
   align-items: center;
-  background: var(--off-white);
   overflow: hidden;
   position: relative;
   padding: 4rem 0 3rem;
+ /* background-image: url('./images/IMG_7250.PNG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
 }
 .hero-ghost-text {
   position: absolute;
