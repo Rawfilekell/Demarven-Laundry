@@ -1,0 +1,2704 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demarven Laundry & Dry Cleaning Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- PAGE LOADING BAR -->
+    <div class="page-loading-bar" id="page-loading-bar"></div>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar" id="announcement-bar">
+      <div class="announcement-inner">
+        <span class="ann-item"
+          ><i class="fas fa-bolt"></i> Same-Day Pickup Available — Book Before
+          10am</span
+        >
+        <span class="ann-divider">|</span>
+        <span class="ann-item"
+          ><i class="fas fa-truck"></i> Free Delivery on Orders Over
+          ₦5,000</span
+        >
+        <span class="ann-divider">|</span>
+        <span class="ann-item"
+          ><i class="fas fa-clock"></i> 24-Hour Turnaround Guarantee</span
+        >
+      </div>
+      <button class="ann-close" id="ann-close" aria-label="Close announcement">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#/" class="nav-logo" data-route="/">
+          <span class="logo-mark">DM</span>
+          <span class="logo-text">Demarven<strong>Laundry</strong></span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#/" class="nav-link active" data-route="/">Home</a></li>
+          <li>
+            <a href="#/pricing" class="nav-link" data-route="/pricing"
+              >Services & Pricing</a
+            >
+          </li>
+          <li>
+            <a href="#/track-order" class="nav-link" data-route="/track-order"
+              >Track Order</a
+            >
+          </li>
+          <li>
+            <a href="#/login" class="nav-link" data-route="/login">Login</a>
+          </li>
+          <li>
+            <a href="#/register" class="nav-link" data-route="/register"
+              >Register</a
+            >
+          </li>
+        </ul>
+        <div class="nav-actions">
+          <!-- Notification Bell (was injected by NotificationCenter.init()) -->
+          <button
+            class="notif-bell-btn"
+            id="notif-bell-btn"
+            aria-label="Notifications"
+          >
+            <i class="fas fa-bell"></i>
+            <span class="notif-bell-badge" id="notif-bell-badge"></span>
+          </button>
+          <a
+            href="#/book-pickup"
+            class="btn btn-primary nav-cta"
+            data-route="/book-pickup"
+          >
+            <i class="fas fa-calendar-check"></i> Book Pickup
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SPA WRAPPER -->
+    <main id="app">
+      <!-- ==================== HOME PAGE ==================== -->
+      <div id="page-home" class="page active">
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero-container">
+            <div class="hero-content">
+              <span class="hero-eyebrow"
+                >Lagos's #1 Premium Laundry Service</span
+              >
+              <h1 class="hero-headline">
+                Professionally Cleaned.<br />
+                <em>Picked Up & Delivered.</em>
+              </h1>
+              <p class="hero-sub">
+                From dry cleaning suits to washing bedding — we handle it all
+                with expert care. Schedule once, relax always.
+              </p>
+              <div class="hero-actions">
+                <a
+                  href="#/book-pickup"
+                  class="btn btn-primary btn-lg"
+                  data-route="/book-pickup"
+                >
+                  <i class="fas fa-calendar-check"></i> Book a Pickup
+                </a>
+                <a
+                  href="#/track-order"
+                  class="btn btn-outline btn-lg"
+                  data-route="/track-order"
+                >
+                  <i class="fas fa-search"></i> Track My Order
+                </a>
+              </div>
+              <div class="hero-trust">
+                <div class="trust-pill">
+                  <i class="fas fa-shield-alt"></i> Insured & Vetted
+                </div>
+                <div class="trust-pill">
+                  <i class="fas fa-star"></i> 4.9 Rating
+                </div>
+                <div class="trust-pill">
+                  <i class="fas fa-undo"></i> Free Re-clean Policy
+                </div>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="hero-machines">
+                <div class="machine-circle machine-1">
+                  <img
+                    src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=300&h=300&fit=crop"
+                    alt="Washing machine"
+                  />
+                </div>
+                <div class="machine-circle machine-2">
+                  <img
+                    src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=300&h=300&fit=crop"
+                    alt="Clean laundry"
+                  />
+                </div>
+                <div class="machine-circle machine-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=300&h=300&fit=crop"
+                    alt="Folded clothes"
+                  />
+                </div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="hero-ghost-text">Laundry</div>
+        </section>
+
+        <!-- METRICS -->
+        <section class="metrics">
+          <div class="container">
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <span class="metric-number">12k<sup>+</sup></span
+                ><span class="metric-label">Happy Customers</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-number">98k<sup>+</sup></span
+                ><span class="metric-label">Orders Completed</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-number">99<sup>%</sup></span
+                ><span class="metric-label">Satisfaction Rate</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-number">6<sup>+</sup></span
+                ><span class="metric-label">Years in Business</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVICES OVERVIEW -->
+        <section class="services-overview section-pad">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-eyebrow">What We Do</span>
+              <h2 class="section-title">Services You'll Love</h2>
+              <p class="section-sub">
+                Every garment treated with precision, every time.
+              </p>
+            </div>
+            <div class="ghost-behind">Services</div>
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&h=260&fit=crop"
+                    alt="Dry Cleaning"
+                    class="service-img"
+                  />
+                </div>
+                <div class="service-body">
+                  <i class="fas fa-vest service-icon-sm"></i>
+                  <h3>Dry Cleaning</h3>
+                  <p>
+                    Gentle solvent-based cleaning for delicate fabrics, suits,
+                    and special garments.
+                  </p>
+                  <a
+                    href="#/services"
+                    class="service-link"
+                    data-route="/pricing"
+                    >Learn more <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=400&h=260&fit=crop"
+                    alt="Laundry"
+                    class="service-img"
+                  />
+                </div>
+                <div class="service-body">
+                  <i class="fas fa-tshirt service-icon-sm"></i>
+                  <h3>Wash & Fold</h3>
+                  <p>
+                    Full laundry service — washed, dried, and neatly folded back
+                    to you.
+                  </p>
+                  <a
+                    href="#/services"
+                    class="service-link"
+                    data-route="/pricing"
+                    >Learn more <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&h=260&fit=crop"
+                    alt="Ironing"
+                    class="service-img"
+                  />
+                </div>
+                <div class="service-body">
+                  <i class="fas fa-fire service-icon-sm"></i>
+                  <h3>Press & Iron</h3>
+                  <p>
+                    Crisp, wrinkle-free results for shirts, trousers, corporate
+                    wear, and more.
+                  </p>
+                  <a
+                    href="#/services"
+                    class="service-link"
+                    data-route="/pricing"
+                    >Learn more <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400&h=260&fit=crop"                    alt="Stain Removal"
+                    class="service-img"
+                  />
+                </div>
+                <div class="service-body">
+                  <i class="fas fa-magic service-icon-sm"></i>
+                  <h3>Stain Removal</h3>
+                  <p>
+                    Specialist stain treatment targeting stubborn marks, oils,
+                    and dyes.
+                  </p>
+                  <a
+                    href="#/services"
+                    class="service-link"
+                    data-route="/pricing"
+                    >Learn more <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1631049552240-59c37f38802b?w=400&h=260&fit=crop"
+                    alt="Bedding"
+                    class="service-img"
+                  />
+                </div>
+                <div class="service-body">
+                  <i class="fas fa-bed service-icon-sm"></i>
+                  <h3>Bedding & Linen</h3>
+                  <p>
+                    Duvets, bed sheets, pillowcases — sanitized, fresh, and
+                    hotel-clean.
+                  </p>
+                  <a
+                    href="#/services"
+                    class="service-link"
+                    data-route="/pricing"
+                    >Learn more <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon-wrap">
+                  <img
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=260&fit=crop"
+                    alt="Curtain Cleaning"
+                    class="service-img"
+                  />
+                </div>
+                <div class="service-body">
+                  <i class="fas fa-scroll service-icon-sm"></i>
+                  <h3>Curtain Cleaning</h3>
+                  <p>
+                    Full curtain and drape cleaning — collected and returned
+                    hung and ready.
+                  </p>
+                  <a
+                    href="#/services"
+                    class="service-link"
+                    data-route="/pricing"
+                    >Learn more <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="how-it-works section-pad bg-light">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-eyebrow">Simple Process</span>
+              <h2 class="section-title">How It Works</h2>
+              <p class="section-sub">
+                Four easy steps to professionally cleaned clothes.
+              </p>
+            </div>
+            <div class="steps-track">
+              <div class="step-item">
+                <div class="step-number">01</div>
+                <div class="step-icon-wrap">
+                  <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Schedule Pickup</h3>
+                <p>
+                  Choose your preferred date and time. We'll confirm within
+                  minutes.
+                </p>
+              </div>
+              <div class="step-connector">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <div class="step-item">
+                <div class="step-number">02</div>
+                <div class="step-icon-wrap">
+                  <i class="fas fa-box-open"></i>
+                </div>
+                <h3>We Collect</h3>
+                <p>
+                  Our team arrives at your door and carefully collects your
+                  garments.
+                </p>
+              </div>
+              <div class="step-connector">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <div class="step-item">
+                <div class="step-number">03</div>
+                <div class="step-icon-wrap"><i class="fas fa-soap"></i></div>
+                <h3>We Clean</h3>
+                <p>
+                  Expert cleaning using professional-grade equipment and premium
+                  products.
+                </p>
+              </div>
+              <div class="step-connector">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <div class="step-item">
+                <div class="step-number">04</div>
+                <div class="step-icon-wrap"><i class="fas fa-truck"></i></div>
+                <h3>We Deliver</h3>
+                <p>
+                  Your clothes — cleaned, pressed, and packaged — returned to
+                  your door.
+                </p>
+              </div>
+            </div>
+            <div class="section-cta">
+              <a
+                href="#/book-pickup"
+                class="btn btn-primary"
+                data-route="/book-pickup"
+                >Schedule My Pickup</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="why-us section-pad">
+          <div class="why-us-inner">
+            <div class="why-us-image">
+              <img
+                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=620&h=700&fit=crop"
+                alt="Clothes on rack"
+              />
+            </div>
+            <div class="why-us-content">
+              <div class="ghost-why">Why Us</div>
+              <span class="section-eyebrow light">Our Promise</span>
+              <h2 class="section-title light">Why Choose Demarven</h2>
+              <p class="why-intro">
+                We don't just clean clothes — we protect what you wear and value
+                most.
+              </p>
+              <div class="why-grid">
+                <div class="why-item">
+                  <span class="why-check"><i class="fas fa-check"></i></span>
+                  <div>
+                    <strong>Doorstep Pickup & Delivery</strong>
+                    <p>No drop-off queues. We come to you.</p>
+                  </div>
+                </div>
+                <div class="why-item">
+                  <span class="why-check"><i class="fas fa-check"></i></span>
+                  <div>
+                    <strong>Professional Care</strong>
+                    <p>Trained handlers for every fabric type.</p>
+                  </div>
+                </div>
+                <div class="why-item">
+                  <span class="why-check"><i class="fas fa-check"></i></span>
+                  <div>
+                    <strong>24-Hour Turnaround</strong>
+                    <p>Fast service without cutting corners.</p>
+                  </div>
+                </div>
+                <div class="why-item">
+                  <span class="why-check"><i class="fas fa-check"></i></span>
+                  <div>
+                    <strong>Secure Online Payments</strong>
+                    <p>Pay safely via card, transfer, or wallet.</p>
+                  </div>
+                </div>
+                <div class="why-item">
+                  <span class="why-check"><i class="fas fa-check"></i></span>
+                  <div>
+                    <strong>Real-Time Order Tracking</strong>
+                    <p>Know exactly where your clothes are.</p>
+                  </div>
+                </div>
+                <div class="why-item">
+                  <span class="why-check"><i class="fas fa-check"></i></span>
+                  <div>
+                    <strong>Damage Guarantee</strong>
+                    <p>We're fully insured. You're fully protected.</p>
+                  </div>
+                </div>
+              </div>
+              <a
+                href="#/book-pickup"
+                class="btn btn-white"
+                data-route="/book-pickup"
+                >Book a Pickup</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- DRY CLEANING SPOTLIGHT -->
+        <section class="feature-spotlight section-pad">
+          <div class="container">
+            <div class="spotlight-inner">
+              <div class="spotlight-content">
+                <span class="section-eyebrow">Premium Service</span>
+                <h2 class="section-title">Expert Dry Cleaning</h2>
+                <p>
+                  Not all garments can be washed with water. Our certified dry
+                  cleaning process uses PERC-alternative solvents that are safer
+                  for delicate fabrics — silk, wool, cashmere, and tailored
+                  suits — while delivering a deeper clean than home laundering
+                  ever could.
+                </p>
+                <div class="spotlight-feats">
+                  <div class="sfeat">
+                    <i class="fas fa-star"></i> Certified Technicians
+                  </div>
+                  <div class="sfeat">
+                    <i class="fas fa-leaf"></i> Eco-Safe Solvents
+                  </div>
+                  <div class="sfeat">
+                    <i class="fas fa-shield-alt"></i> Guaranteed Results
+                  </div>
+                  <div class="sfeat">
+                    <i class="fas fa-tag"></i> Transparent Pricing
+                  </div>
+                </div>
+                <a
+                  href="#/pricing"
+                  class="btn btn-primary"
+                  data-route="/pricing"
+                  >View Services & Pricing</a
+                >
+              </div>
+              <div class="spotlight-image">
+                <img
+                  src="https://images.unsplash.com/photo-1489274495757-95c7c837b101?w=560&h=600&fit=crop"
+                  alt="Dry cleaning service"
+                />
+                <div class="spotlight-badge">
+                  <span class="badge-num">24h</span
+                  ><span class="badge-txt">Turnaround</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PRICING PREVIEW -->
+        <section class="pricing-preview section-pad bg-light">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-eyebrow">Transparent Rates</span>
+              <h2 class="section-title">Affordable Price</h2>
+              <p class="section-sub">
+                No hidden fees. No surprises. Just fair prices.
+              </p>
+            </div>
+
+            <div class="section-cta">
+              <a href="#/pricing" class="btn btn-ghost" data-route="/pricing"
+                >See Price List <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials section-pad">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-eyebrow">Customer Reviews</span>
+              <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="testi-grid">
+              <div class="testi-card">
+                <div class="testi-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p>
+                  "My Agbada came back looking brand new. The ironing was
+                  immaculate and delivery was right on time. Best laundry
+                  service in Lagos, period."
+                </p>
+                <div class="testi-author">
+                  <div class="testi-avatar">AO</div>
+                  <div>
+                    <strong>Adewale Okonkwo</strong><span>Victoria Island</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-card testi-featured">
+                <div class="testi-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p>
+                  "I was skeptical about trusting a service with my designer
+                  suits, but Demarven exceeded every expectation. The real-time
+                  tracking gave me complete peace of mind."
+                </p>
+                <div class="testi-author">
+                  <div class="testi-avatar">CN</div>
+                  <div>
+                    <strong>Chioma Nwosu</strong><span>Lekki Phase 1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-card">
+                <div class="testi-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>
+                  "The pickup rider was professional and on time. My curtains
+                  came back smelling amazing. I've already referred all my
+                  neighbours. Highly recommended!"
+                </p>
+                <div class="testi-author">
+                  <div class="testi-avatar">BT</div>
+                  <div>
+                    <strong>Blessing Taiwo</strong><span>Ikeja GRA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- COVERAGE -->
+        <section class="coverage section-pad bg-light">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-eyebrow">Where We Operate</span>
+              <h2 class="section-title">Coverage Areas</h2>
+              <p class="section-sub">
+                Serving key locations across Lagos with rapid pickup and
+                delivery.
+              </p>
+            </div>
+            <div class="coverage-grid">
+              <div class="coverage-item">
+                <i class="fas fa-map-marker-alt"></i> Victoria Island
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-map-marker-alt"></i> Lekki Phase 1 & 2
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-map-marker-alt"></i> Ikeja & GRA
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-map-marker-alt"></i> Yaba & Surulere
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-map-marker-alt"></i> Ikoyi
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-map-marker-alt"></i> Ajah & Sangotedo
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-map-marker-alt"></i> Maryland
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-map-marker-alt"></i> Gbagada
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-map-marker-alt coverage-soon"></i> Abuja
+                <span class="soon-tag">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ACCOUNT BENEFITS -->
+        <section class="account-benefits section-pad">
+          <div class="container">
+            <div class="benefits-inner">
+              <div class="benefits-image">
+                <img
+                  src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500&h=550&fit=crop"
+                  alt="Clean laundry basket"
+                />
+              </div>
+              <div class="benefits-content">
+                <span class="section-eyebrow">Create a Free Account</span>
+                <h2 class="section-title">Your Laundry, Organised</h2>
+                <p>
+                  Sign up free and manage all your orders from one clean
+                  dashboard.
+                </p>
+                <div class="benefit-list">
+                  <div class="benefit-item">
+                    <i class="fas fa-history"></i>
+                    <div>
+                      <strong>Full Order History</strong>
+                      <p>Review and reorder past items in seconds.</p>
+                    </div>
+                  </div>
+                  <div class="benefit-item">
+                    <i class="fas fa-map-pin"></i>
+                    <div>
+                      <strong>Saved Addresses</strong>
+                      <p>Multiple pickup and delivery locations stored.</p>
+                    </div>
+                  </div>
+                  <div class="benefit-item">
+                    <i class="fas fa-redo"></i>
+                    <div>
+                      <strong>One-Click Reorders</strong>
+                      <p>
+                        Repeat your favourite order without re-entering details.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="benefit-item">
+                    <i class="fas fa-receipt"></i>
+                    <div>
+                      <strong>Payment Tracking</strong>
+                      <p>
+                        Digital receipts and payment history at your fingertips.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits-actions">
+                  <a
+                    href="#/register"
+                    class="btn btn-primary"
+                    data-route="/register"
+                    >Create Free Account</a
+                  >
+                  <a href="#/login" class="btn btn-ghost" data-route="/login"
+                    >Sign In</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="cta-banner">
+          <div class="cta-banner-inner">
+            <div class="cta-banner-content">
+              <div class="cta-banner-text">
+                <h2>Call for a Quick Pickup</h2>
+                <p>Pickup & Delivery Available Across Lagos</p>
+              </div>
+              <div class="cta-banner-image">
+                <img
+                  src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=380&h=280&fit=crop"
+                  alt="Laundry basket"
+                />
+              </div>
+              <div class="cta-banner-contact">
+                <a href="tel:+2348012345678" class="cta-phone"
+                  ><i class="fas fa-phone"></i>
+                  <div>
+                    <strong>+234 801 234 5678</strong><span>Call Now</span>
+                  </div></a
+                >
+                <a
+                  href="#/book-pickup"
+                  class="btn btn-dark"
+                  data-route="/book-pickup"
+                  >Book Online <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact section-pad" id="contact">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-eyebrow">Get In Touch</span>
+              <h2 class="section-title">Contact Us</h2>
+            </div>
+            <div class="contact-inner">
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <strong>Phone</strong
+                    ><a href="tel:+2348012345678">+234 801 234 5678</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <strong>Email</strong
+                    ><a href="mailto:hello@Demarven.ng">hello@Demarven.ng</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <strong>Location</strong
+                    ><span>14 Adeola Odeku Street, Victoria Island, Lagos</span>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                  <div>
+                    <strong>Working Hours</strong
+                    ><span>Mon – Sat: 7am – 9pm<br />Sunday: 9am – 6pm</span>
+                  </div>
+                </div>
+                <div class="contact-socials">
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </div>
+              </div>
+              <form class="contact-form" id="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-name">Full Name</label
+                    ><input
+                      type="text"
+                      id="contact-name"
+                      placeholder="Adewale Okonkwo"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email">Email Address</label
+                    ><input
+                      type="email"
+                      id="contact-email"
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number</label
+                  ><input
+                    type="tel"
+                    id="contact-phone"
+                    placeholder="+234 800 000 0000"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Subject</label
+                  ><input
+                    type="text"
+                    id="contact-subject"
+                    placeholder="How can we help?"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-msg">Message</label
+                  ><textarea
+                    id="contact-msg"
+                    rows="5"
+                    placeholder="Tell us about your order or enquiry..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- /page-home -->
+
+      <!-- ==================== SERVICES PAGE ==================== -->
+      <div id="page-services" class="page">
+        <div class="page-hero-sm">
+          <div class="container">
+            <span class="page-hero-eyebrow">What We Offer</span>
+            <h1>Our Services</h1>
+            <p>
+              Professional laundry care for every garment type — picked up and
+              delivered.
+            </p>
+          </div>
+        </div>
+        <section class="section-pad services-page-body">
+          <div class="container">
+            <div class="services-how-strip">
+              <div class="svc-how-item">
+                <i class="fas fa-calendar-alt"></i><span>Book Online</span>
+              </div>
+              <i class="fas fa-arrow-right svc-how-arrow"></i>
+              <div class="svc-how-item">
+                <i class="fas fa-box-open"></i><span>We Collect</span>
+              </div>
+              <i class="fas fa-arrow-right svc-how-arrow"></i>
+              <div class="svc-how-item">
+                <i class="fas fa-soap"></i><span>We Clean</span>
+              </div>
+              <i class="fas fa-arrow-right svc-how-arrow"></i>
+              <div class="svc-how-item">
+                <i class="fas fa-truck"></i><span>We Deliver</span>
+              </div>
+            </div>
+            <div class="section-header" style="margin-top: 3rem">
+              <span class="section-eyebrow">Full Service Menu</span>
+              <h2 class="section-title">Everything We Do</h2>
+              <p class="section-sub">
+                Click any service to create an order directly.
+              </p>
+            </div>
+            <!-- Populated from API by ServicesPage.init() -->
+            <div class="services-full-grid"></div>
+            <div class="services-guarantee section-pad">
+              <div class="guarantee-grid">
+                <div class="guarantee-item">
+                  <i class="fas fa-undo-alt"></i>
+                  <div>
+                    <strong>Free Re-clean Guarantee</strong>
+                    <p>
+                      Not satisfied? We'll re-clean at no charge, no questions
+                      asked.
+                    </p>
+                  </div>
+                </div>
+                <div class="guarantee-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <div>
+                    <strong>Fully Insured</strong>
+                    <p>
+                      Every item is covered. We take responsibility for anything
+                      in our care.
+                    </p>
+                  </div>
+                </div>
+                <div class="guarantee-item">
+                  <i class="fas fa-leaf"></i>
+                  <div>
+                    <strong>Eco-Friendly Products</strong>
+                    <p>
+                      We use environmentally responsible detergents and
+                      solvents.
+                    </p>
+                  </div>
+                </div>
+                <div class="guarantee-item">
+                  <i class="fas fa-star"></i>
+                  <div>
+                    <strong>Expert Technicians</strong>
+                    <p>
+                      Trained professionals handle every fabric type with care.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ==================== PRICING PAGE ==================== -->
+      <div id="page-pricing" class="page">
+        <div class="page-hero-sm">
+          <div class="container">
+            <span class="page-hero-eyebrow">What We Offer</span>
+            <h1>Services & Pricing</h1>
+            <p>Everything we do, and exactly what it costs. No hidden fees.</p>
+          </div>
+        </div>
+        <section class="section-pad">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-eyebrow">Item-by-Item Rates</span>
+              <h2 class="section-title">Full Price List</h2>
+              <p class="section-sub">
+                Prices vary by item type and cleaning tier. All prices in Naira.
+              </p>
+            </div>
+            <div class="pricing-table-wrap">
+              <table class="pricing-table">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th><span class="tier-badge basic">Basic</span></th>
+                    <th><span class="tier-badge standard">Standard</span></th>
+                    <th><span class="tier-badge premium">Premium</span></th>
+                  </tr>
+                </thead>
+                <!-- Populated from API by PricingPage.init() -->
+                <tbody class="pricing-table-body">
+                  <tr class="price-cat-row">
+                    <td colspan="4"><strong>Native & Traditional</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Complete Agbada</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>₦2,000</td>
+                  </tr>
+                  <tr>
+                    <td>Sokoto & Buba</td>
+                    <td>—</td>
+                    <td>₦1,200</td>
+                    <td>—</td>
+                  </tr>
+
+                  <tr class="price-cat-row">
+                    <td colspan="4"><strong>Corporate / Formal</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Office Shirt</td>
+                    <td>₦700</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Male Suit</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>₦3,000</td>
+                  </tr>
+                  <tr>
+                    <td>Female Suit</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>₦2,000</td>
+                  </tr>
+
+                  <tr class="price-cat-row">
+                    <td colspan="4"><strong>Everyday Laundry</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Polo / T-Shirt</td>
+                    <td>₦600</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Trouser</td>
+                    <td>₦600</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Jeans</td>
+                    <td>₦700</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Boxers</td>
+                    <td>₦500</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Face Cap</td>
+                    <td>₦500</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Garment</td>
+                    <td>—</td>
+                    <td>₦1,500</td>
+                    <td>—</td>
+                  </tr>
+
+                  <tr class="price-cat-row">
+                    <td colspan="4"><strong>Ladies' Wear</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Dress</td>
+                    <td>—</td>
+                    <td>₦1,200</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Stoned Dresses</td>
+                    <td>—</td>
+                    <td>₦1,500</td>
+                    <td>—</td>
+                  </tr>
+
+                  <tr class="price-cat-row">
+                    <td colspan="4"><strong>Bedding & Home</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Bed Sheet</td>
+                    <td>—</td>
+                    <td>₦1,200</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Towel (Big)</td>
+                    <td>—</td>
+                    <td>₦1,000</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Towel (Medium)</td>
+                    <td>₦800</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Duvet</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>₦4,000</td>
+                  </tr>
+
+                  <tr class="price-cat-row">
+                    <td colspan="4"><strong>Ironing Only</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Shirt</td>
+                    <td>₦500</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Trouser</td>
+                    <td>₦400</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Sokoto & Buba</td>
+                    <td>—</td>
+                    <td>₦800</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Dress</td>
+                    <td>—</td>
+                    <td>₦800</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Suit (Male/Female)</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>₦1,200</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="pricing-note">
+              <i class="fas fa-info-circle"></i> All prices subject to item
+              inspection. Express/same-day service attracts a 50% surcharge.
+              Free pickup & delivery on orders ₦5,000+.
+            </p>
+            <div class="section-header" style="margin-top: 4rem">
+              <span class="section-eyebrow">Estimate Your Bill</span>
+              <h2 class="section-title">Price Calculator</h2>
+              <p class="section-sub">
+                Build your order and get an instant estimate.
+              </p>
+            </div>
+            <!-- Populated by PricingPage.init() -->
+            <div class="price-calculator-wrap">
+              <div class="price-calc-items"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ==================== BOOK PICKUP PAGE ==================== -->
+      <div id="page-book-pickup" class="page">
+        <div class="page-hero-sm">
+          <div class="container">
+            <span class="page-hero-eyebrow">Doorstep Collection</span>
+            <h1>Book a Pickup</h1>
+            <p>
+              Schedule your collection in under 2 minutes. We'll confirm by SMS.
+            </p>
+          </div>
+        </div>
+        <section class="section-pad">
+          <div class="container">
+            <div class="pickup-layout">
+              <div class="pickup-success" style="display: none">
+                <div class="success-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Pickup Scheduled!</h2>
+                <p>
+                  We've received your booking. You'll get an SMS confirmation
+                  shortly. Our rider will be at your door at your chosen time.
+                </p>
+                <div class="success-actions">
+                  <a
+                    href="#/track-order"
+                    class="btn btn-primary"
+                    data-route="/track-order"
+                    ><i class="fas fa-search"></i> Track My Order</a
+                  >
+                  <a href="#/" class="btn btn-ghost" data-route="/"
+                    ><i class="fas fa-home"></i> Back to Home</a
+                  >
+                </div>
+              </div>
+              <form id="pickup-form" class="pickup-form-card" novalidate>
+                <div class="pickup-form-header">
+                  <h2>Pickup Details</h2>
+                  <p>Fill in your details and we'll handle the rest.</p>
+                </div>
+                <div class="form-section-label">Personal Information</div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="pickup-name">Full Name *</label
+                    ><input
+                      type="text"
+                      id="pickup-name"
+                      placeholder="Adewale Okonkwo"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="pickup-phone">Phone Number *</label
+                    ><input
+                      type="tel"
+                      id="pickup-phone"
+                      placeholder="+234 800 000 0000"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="pickup-email">Email Address</label
+                  ><input
+                    type="email"
+                    id="pickup-email"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div class="form-section-label">Pickup Location</div>
+                <div class="form-group">
+                  <label for="pickup-address">Street Address *</label
+                  ><input
+                    type="text"
+                    id="pickup-address"
+                    placeholder="14 Adeola Odeku Street"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pickup-area">Area / LGA *</label>
+                  <select id="pickup-area" required>
+                    <option value="">Select your area...</option>
+                    <option>Victoria Island</option>
+                    <option>Lekki Phase 1</option>
+                    <option>Lekki Phase 2</option>
+                    <option>Ikeja</option>
+                    <option>Ikeja GRA</option>
+                    <option>Ikoyi</option>
+                    <option>Yaba</option>
+                    <option>Surulere</option>
+                    <option>Ajah</option>
+                    <option>Sangotedo</option>
+                    <option>Maryland</option>
+                    <option>Gbagada</option>
+                  </select>
+                </div>
+                <div class="form-section-label">Schedule</div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="pickup-date">Pickup Date *</label
+                    ><input type="date" id="pickup-date" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="pickup-slot">Time Slot *</label>
+                    <select id="pickup-slot" required>
+                      <option value="">Select a slot...</option>
+                      <option value="7am-9am">7:00 AM – 9:00 AM</option>
+                      <option value="9am-11am">9:00 AM – 11:00 AM</option>
+                      <option value="11am-1pm">11:00 AM – 1:00 PM</option>
+                      <option value="1pm-3pm">1:00 PM – 3:00 PM</option>
+                      <option value="3pm-5pm">3:00 PM – 5:00 PM</option>
+                      <option value="5pm-7pm">5:00 PM – 7:00 PM</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="pickup-instructions"
+                    >Special Instructions (optional)</label
+                  ><textarea
+                    id="pickup-instructions"
+                    rows="3"
+                    placeholder="e.g. Gate code, item notes, fragile items..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-lg">
+                  <i class="fas fa-calendar-check"></i> Confirm Pickup
+                </button>
+              </form>
+              <div class="pickup-side-info">
+                <div class="pickup-info-card">
+                  <h3><i class="fas fa-clock"></i> Turnaround Times</h3>
+                  <ul class="pickup-info-list">
+                    <li>
+                      <span>Basic (Wash & Fold)</span><strong>48 hrs</strong>
+                    </li>
+                    <li>
+                      <span>Standard (Dry Clean)</span><strong>24 hrs</strong>
+                    </li>
+                    <li>
+                      <span>Premium (White-Glove)</span
+                      ><strong>Same Day</strong>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pickup-info-card">
+                  <h3><i class="fas fa-truck"></i> Delivery Info</h3>
+                  <ul class="pickup-info-list">
+                    <li>
+                      <span>Free delivery</span><strong>Orders ₦5,000+</strong>
+                    </li>
+                    <li><span>Delivery fee</span><strong>₦500 flat</strong></li>
+                    <li>
+                      <span>Coverage</span><strong>All Lagos zones</strong>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pickup-info-card">
+                  <h3><i class="fas fa-phone"></i> Need Help?</h3>
+                  <p>Our team is available Mon–Sat 7am–9pm</p>
+                  <a
+                    href="tel:+2348012345678"
+                    class="btn btn-outline"
+                    style="margin-top: 0.75rem; width: 100%"
+                    ><i class="fas fa-phone"></i> +234 801 234 5678</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ==================== CREATE ORDER PAGE ==================== -->
+      <div id="page-create-order" class="page">
+        <div class="page-hero-sm">
+          <div class="container">
+            <span class="page-hero-eyebrow">Build Your Order</span>
+            <h1>Create an Order</h1>
+            <p>
+              Select the items you need cleaned, add your details, and we'll do
+              the rest.
+            </p>
+          </div>
+        </div>
+        <section class="section-pad order-form-section">
+          <div class="container">
+            <div class="order-layout">
+              <div class="order-items-section">
+                <div class="order-section-title">
+                  <h3>Select Items</h3>
+                  <p>Tap + to add items to your order</p>
+                </div>
+                <!-- Populated from API by CreateOrderPage.init() -->
+                <div class="order-items-grid"></div>
+              </div>
+              <div class="order-right">
+                <div class="order-summary-card">
+                  <h3 class="order-summary-heading">Order Summary</h3>
+                  <div class="order-summary-list">
+                    <p class="order-empty-cart">
+                      No items added yet. Select items on the left.
+                    </p>
+                  </div>
+                  <div class="order-summary-total">
+                    <span>Estimated Total</span>
+                    <span class="order-summary-total-amount">₦0</span>
+                  </div>
+                </div>
+                <form id="order-form" class="order-form-card" novalidate>
+                  <div class="order-section-title"><h3>Your Details</h3></div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="order-name">Name *</label
+                      ><input
+                        type="text"
+                        id="order-name"
+                        placeholder="Full name"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="order-phone">Phone *</label
+                      ><input
+                        type="tel"
+                        id="order-phone"
+                        placeholder="+234 800 000 0000"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="order-email">Email</label
+                    ><input
+                      type="email"
+                      id="order-email"
+                      placeholder="you@example.com"
+                    />
+                  </div>
+                  <div class="order-section-title" style="margin-top: 1.25rem">
+                    <h3>Delivery Details</h3>
+                  </div>
+                  <div class="form-group">
+                    <label for="order-address">Address *</label
+                    ><input
+                      type="text"
+                      id="order-address"
+                      placeholder="Street address"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="order-area">Area *</label>
+                    <select id="order-area" required>
+                      <option value="">Select area...</option>
+                      <option>Victoria Island</option>
+                      <option>Lekki Phase 1</option>
+                      <option>Lekki Phase 2</option>
+                      <option>Ikeja</option>
+                      <option>Ikeja GRA</option>
+                      <option>Ikoyi</option>
+                      <option>Yaba</option>
+                      <option>Surulere</option>
+                      <option>Ajah</option>
+                      <option>Sangotedo</option>
+                      <option>Maryland</option>
+                      <option>Gbagada</option>
+                    </select>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="order-service-type">Service Type *</label>
+                      <select id="order-service-type" required>
+                        <option value="">Choose service...</option>
+                        <option value="wash-fold">Wash & Fold (Basic)</option>
+                        <option value="dry-clean">
+                          Dry Cleaning (Standard)
+                        </option>
+                        <option value="premium">White-Glove (Premium)</option>
+                        <option value="iron-only">Press & Iron only</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="order-pickup-date">Pickup Date *</label
+                      ><input type="date" id="order-pickup-date" required />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="order-notes">Special Notes</label
+                    ><textarea
+                      id="order-notes"
+                      rows="2"
+                      placeholder="Stain info, fabric care notes..."
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block btn-lg"
+                  >
+                    <i class="fas fa-check"></i> Place Order
+                  </button>
+                  <p class="order-payment-note">
+                    <i class="fas fa-lock"></i> Payment collected on delivery or
+                    via secure link after confirmation.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="order-confirmation-panel" style="display: none">
+          <div class="container">
+            <div class="order-confirm-card">
+              <div class="confirm-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <h2>Order Placed Successfully!</h2>
+              <p>Your order reference is:</p>
+              <div class="order-ref-code">—</div>
+              <p class="confirm-sub">
+                Our team will confirm your pickup within 30 minutes. You'll
+                receive an SMS with tracking details.
+              </p>
+              <div class="confirm-actions">
+                <a
+                  href="#/track-order"
+                  class="btn btn-primary"
+                  data-route="/track-order"
+                  ><i class="fas fa-search"></i> Track My Order</a
+                >
+                <a href="#/" class="btn btn-ghost" data-route="/"
+                  ><i class="fas fa-home"></i> Go Home</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== TRACK ORDER PAGE ==================== -->
+      <div id="page-track-order" class="page">
+        <div class="page-hero-sm">
+          <div class="container">
+            <span class="page-hero-eyebrow">Live Status</span>
+            <h1>Track Your Order</h1>
+            <p>
+              Enter your order reference or phone number to see real-time
+              updates.
+            </p>
+          </div>
+        </div>
+        <section class="section-pad">
+          <div class="container track-container">
+            <div class="track-search-card">
+              <h3>Find Your Order</h3>
+              <form id="track-form" novalidate>
+                <div class="track-input-row">
+                  <div class="form-group" style="flex: 1; margin: 0">
+                    <input
+                      type="text"
+                      id="track-code"
+                      placeholder="e.g. DM12345678 or your phone number"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Track Order
+                  </button>
+                </div>
+              </form>
+              <p class="track-hint">
+                <i class="fas fa-info-circle"></i> Your order reference was sent
+                by SMS and email when you placed your order.
+              </p>
+            </div>
+            <!-- Populated by TrackOrderPage after API response -->
+            <div class="track-result" style="display: none">
+              <div class="track-result-header">
+                <div>
+                  <div class="track-order-id-label">Order Reference</div>
+                  <div class="track-order-id">—</div>
+                </div>
+                <div class="track-eta-wrap">
+                  <i class="fas fa-clock"></i><span class="track-eta">—</span>
+                </div>
+              </div>
+              <div class="track-steps-wrap">
+                <div class="track-steps"></div>
+              </div>
+              <div class="track-details-grid">
+                <div class="track-details-card">
+                  <h4><i class="fas fa-tshirt"></i> Items in Order</h4>
+                  <ul class="track-items-list"></ul>
+                </div>
+                <div class="track-details-card">
+                  <h4><i class="fas fa-motorcycle"></i> Your Rider</h4>
+                  <div class="track-rider"></div>
+                </div>
+              </div>
+            </div>
+            <div class="track-empty" style="display: none">
+              <div class="dash-empty-state">
+                <i class="fas fa-search"></i>
+                <h3>Order Not Found</h3>
+                <p>
+                  We couldn't find an order with that reference. Double-check
+                  your SMS or call us on
+                  <a href="tel:+2348012345678">+234 801 234 5678</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ==================== LOGIN PAGE ==================== -->
+      <div id="page-login" class="page">
+        <div class="auth-page">
+          <div class="auth-card">
+            <div class="auth-logo">
+              <span class="logo-mark">DM</span>
+              <span class="logo-text">Demarven<strong>Laundry</strong></span>
+            </div>
+            <h2>Welcome Back</h2>
+            <p>Sign in to your account</p>
+            <form class="auth-form" id="login-form" novalidate>
+              <div class="form-group">
+                <label>Email Address</label
+                ><input
+                  type="email"
+                  id="login-email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <div class="input-with-icon">
+                  <input
+                    type="password"
+                    id="login-password"
+                    placeholder="Your password"
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="toggle-pw"
+                    data-target="login-password"
+                  >
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="auth-meta">
+                <label class="checkbox-label"
+                  ><input type="checkbox" /> Remember me</label
+                >
+                <a
+                  href="#/forgot-password"
+                  class="auth-link"
+                  data-route="/forgot-password"
+                  >Forgot password?</a
+                >
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Sign In
+              </button>
+            </form>
+            <div class="auth-divider"><span>or continue with</span></div>
+            <div class="auth-social-row">
+              <button class="btn btn-ghost auth-social-btn">
+                <i class="fab fa-google"></i> Google
+              </button>
+              <button class="btn btn-ghost auth-social-btn">
+                <i class="fab fa-facebook-f"></i> Facebook
+              </button>
+            </div>
+            <p class="auth-switch">
+              Don't have an account?
+              <a href="#/register" class="auth-link" data-route="/register"
+                >Register free</a
+              >
+            </p>
+            <p class="auth-switch" style="margin-top: 0.5rem">
+              <a
+                href="#/admin-dashboard"
+                class="auth-link"
+                data-route="/admin-dashboard"
+                style="font-size: 0.8rem; color: var(--light-text)"
+                >Admin login →</a
+              >
+              &nbsp;|&nbsp;
+              <a
+                href="#/staff-dashboard"
+                class="auth-link"
+                data-route="/staff-dashboard"
+                style="font-size: 0.8rem; color: var(--blue)"
+                >Staff login →</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== REGISTER PAGE ==================== -->
+      <div id="page-register" class="page">
+        <div class="auth-page">
+          <div class="auth-card auth-card-wide">
+            <div class="auth-logo">
+              <span class="logo-mark">DM</span>
+              <span class="logo-text">Demarven<strong>Laundry</strong></span>
+            </div>
+            <h2>Create Your Account</h2>
+            <p>Get started — it's completely free</p>
+            <form class="auth-form" id="register-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name</label
+                  ><input
+                    type="text"
+                    id="reg-first-name"
+                    placeholder="Adewale"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label
+                  ><input
+                    type="text"
+                    id="reg-last-name"
+                    placeholder="Okonkwo"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label
+                ><input
+                  type="email"
+                  id="reg-email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label
+                ><input
+                  type="tel"
+                  id="reg-phone"
+                  placeholder="+234 800 000 0000"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Password</label>
+                  <div class="input-with-icon">
+                    <input
+                      type="password"
+                      id="reg-password"
+                      placeholder="Min. 8 characters"
+                      required
+                    />
+                    <button
+                      type="button"
+                      class="toggle-pw"
+                      data-target="reg-password"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Confirm Password</label>
+                  <input
+                    type="password"
+                    id="reg-confirm"
+                    placeholder="Repeat password"
+                    required
+                  />
+                </div>
+              </div>
+              <label class="checkbox-label terms"
+                ><input type="checkbox" required /> I agree to the
+                <a href="#" class="auth-link">Terms of Service</a> and
+                <a href="#" class="auth-link">Privacy Policy</a></label
+              >
+              <button type="submit" class="btn btn-primary btn-block">
+                Create Account
+              </button>
+            </form>
+            <div class="auth-divider"><span>or sign up with</span></div>
+            <div class="auth-social-row">
+              <button class="btn btn-ghost auth-social-btn">
+                <i class="fab fa-google"></i> Google
+              </button>
+              <button class="btn btn-ghost auth-social-btn">
+                <i class="fab fa-facebook-f"></i> Facebook
+              </button>
+            </div>
+            <p class="auth-switch">
+              Already have an account?
+              <a href="#/login" class="auth-link" data-route="/login"
+                >Sign in</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== FORGOT PASSWORD PAGE ==================== -->
+      <!-- Shell only — inner content rendered by ForgotPasswordPage (multi-step OTP flow) -->
+      <div id="page-forgot-password" class="page">
+        <div class="auth-page">
+          <div class="auth-card"></div>
+        </div>
+      </div>
+
+      <!-- ==================== CUSTOMER DASHBOARD ==================== -->
+      <div id="page-customer-dashboard" class="page">
+        <div class="dash-layout">
+          <aside class="dash-sidebar">
+            <div class="dash-sidebar-logo">
+              <a href="#/" data-route="/" class="nav-logo">
+                <span class="logo-mark">DM</span>
+                <span class="logo-text">Demarven<strong>Laundry</strong></span>
+              </a>
+            </div>
+            <nav class="dash-nav">
+              <button class="dash-tab active" data-tab="overview">
+                <i class="fas fa-th-large"></i> Overview
+              </button>
+              <button class="dash-tab" data-tab="orders">
+                <i class="fas fa-shopping-bag"></i> My Orders
+              </button>
+              <button class="dash-tab" data-tab="track">
+                <i class="fas fa-map-marker-alt"></i> Track Order
+              </button>
+              <button class="dash-tab" data-tab="addresses">
+                <i class="fas fa-map-pin"></i> Addresses
+              </button>
+              <button class="dash-tab" data-tab="payments">
+                <i class="fas fa-receipt"></i> Payments
+              </button>
+              <button class="dash-tab" data-tab="profile">
+                <i class="fas fa-user"></i> Profile
+              </button>
+            </nav>
+            <div class="dash-sidebar-footer">
+              <a
+                href="#/"
+                class="btn btn-ghost"
+                data-route="/"
+                style="width: 100%; justify-content: center"
+                ><i class="fas fa-home"></i> Back to Site</a
+              >
+            </div>
+          </aside>
+          <div class="dash-main">
+            <div class="dash-header">
+              <div>
+                <h1 class="dash-welcome">Good day!</h1>
+                <p class="dash-welcome-sub">
+                  Here's a snapshot of your account.
+                </p>
+              </div>
+              <a
+                href="#/create-order"
+                class="btn btn-primary"
+                data-route="/create-order"
+                ><i class="fas fa-plus"></i> New Order</a
+              >
+            </div>
+            <div id="dash-overview" class="dash-panel active">
+              <!-- Stat cards populated by CustomerDashboard.init() -->
+              <div class="dash-stats"></div>
+              <div class="dash-quick-actions">
+                <h3 class="dash-section-title">Quick Actions</h3>
+                <div class="dash-action-grid">
+                  <a
+                    href="#/book-pickup"
+                    class="dash-action-card"
+                    data-route="/book-pickup"
+                    ><i class="fas fa-calendar-check"></i
+                    ><span>Book Pickup</span></a
+                  >
+                  <a
+                    href="#/create-order"
+                    class="dash-action-card"
+                    data-route="/create-order"
+                    ><i class="fas fa-plus-circle"></i><span>New Order</span></a
+                  >
+                  <a
+                    href="#/track-order"
+                    class="dash-action-card"
+                    data-route="/track-order"
+                    ><i class="fas fa-map-marker-alt"></i
+                    ><span>Track Order</span></a
+                  >
+                  <a
+                    href="#/pricing"
+                    class="dash-action-card"
+                    data-route="/pricing"
+                    ><i class="fas fa-tag"></i><span>View Pricing</span></a
+                  >
+                </div>
+              </div>
+              <div class="dash-recent">
+                <h3 class="dash-section-title">Recent Orders</h3>
+                <div class="dash-empty-state" style="display: flex">
+                  <i class="fas fa-shopping-bag"></i>
+                  <h3>No orders yet</h3>
+                  <p>
+                    Your recent orders will appear here once you place your
+                    first order.
+                  </p>
+                  <a
+                    href="#/create-order"
+                    class="btn btn-primary"
+                    data-route="/create-order"
+                    >Place Your First Order</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div id="dash-orders" class="dash-panel">
+              <div class="dash-panel-header">
+                <h2>My Orders</h2>
+                <div class="dash-filter-row">
+                  <select class="dash-filter-select">
+                    <option>All Orders</option>
+                    <option>Active</option>
+                    <option>Completed</option>
+                    <option>Cancelled</option>
+                  </select>
+                  <a
+                    href="#/create-order"
+                    class="btn btn-primary"
+                    data-route="/create-order"
+                    ><i class="fas fa-plus"></i> New Order</a
+                  >
+                </div>
+              </div>
+              <div class="dash-empty-state">
+                <i class="fas fa-inbox"></i>
+                <h3>No orders found</h3>
+                <p>
+                  You haven't placed any orders yet. Start your first order to
+                  see it here.
+                </p>
+                <a
+                  href="#/create-order"
+                  class="btn btn-primary"
+                  data-route="/create-order"
+                  >Create an Order</a
+                >
+              </div>
+            </div>
+            <div id="dash-track" class="dash-panel">
+              <div class="dash-panel-header"><h2>Track an Order</h2></div>
+              <div class="track-search-card" style="max-width: 600px">
+                <h3>Enter Order Reference</h3>
+                <form
+                  novalidate
+                  onsubmit="
+                    event.preventDefault();
+                    TrackOrderPage.pendingCode =
+                      this.querySelector('input').value.trim();
+                    Router.navigate('/track-order');
+                  "
+                >
+                  <div class="track-input-row">
+                    <div class="form-group" style="flex: 1; margin: 0">
+                      <input type="text" placeholder="e.g. DM12345678" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      <i class="fas fa-search"></i> Track
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="dash-addresses" class="dash-panel">
+              <div class="dash-panel-header">
+                <h2>Saved Addresses</h2>
+                <button
+                  class="btn btn-primary"
+                  onclick="
+                    Notify.info(
+                      'Coming Soon',
+                      'Address management will be available soon.',
+                    )
+                  "
+                >
+                  <i class="fas fa-plus"></i> Add Address
+                </button>
+              </div>
+              <div class="dash-empty-state">
+                <i class="fas fa-map-pin"></i>
+                <h3>No saved addresses</h3>
+                <p>
+                  Save your pickup and delivery addresses here for faster
+                  ordering.
+                </p>
+                <button
+                  class="btn btn-primary"
+                  onclick="
+                    Notify.info(
+                      'Coming Soon',
+                      'Address management will be available soon.',
+                    )
+                  "
+                >
+                  Add Address
+                </button>
+              </div>
+            </div>
+            <div id="dash-payments" class="dash-panel">
+              <div class="dash-panel-header"><h2>Payment History</h2></div>
+              <div class="dash-empty-state">
+                <i class="fas fa-receipt"></i>
+                <h3>No payments yet</h3>
+                <p>
+                  Your payment receipts will appear here after your first order.
+                </p>
+              </div>
+            </div>
+            <div id="dash-profile" class="dash-panel">
+              <div class="dash-panel-header"><h2>My Profile</h2></div>
+              <form
+                id="dash-profile-form"
+                class="dash-profile-form"
+                onsubmit="
+                  event.preventDefault();
+                  Notify.success(
+                    'Profile Updated',
+                    'Your changes have been saved.',
+                  );
+                "
+              >
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>First Name</label
+                    ><input type="text" placeholder="Your first name" />
+                  </div>
+                  <div class="form-group">
+                    <label>Last Name</label
+                    ><input type="text" placeholder="Your last name" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Email Address</label
+                  ><input type="email" placeholder="you@example.com" />
+                </div>
+                <div class="form-group">
+                  <label>Phone Number</label
+                  ><input type="tel" placeholder="+234 800 000 0000" />
+                </div>
+                <div class="form-group">
+                  <label>New Password (leave blank to keep current)</label>
+                  <div class="input-with-icon">
+                    <input
+                      type="password"
+                      id="profile-pw"
+                      placeholder="New password"
+                    /><button
+                      type="button"
+                      class="toggle-pw"
+                      data-target="profile-pw"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-save"></i> Save Changes
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== ADMIN DASHBOARD ==================== -->
+      <div id="page-admin-dashboard" class="page">
+        <div class="dash-layout admin-layout">
+          <aside class="dash-sidebar admin-sidebar">
+            <div class="dash-sidebar-logo">
+              <a href="#/" data-route="/" class="nav-logo">
+                <span class="logo-mark">DM</span>
+                <span class="logo-text">Demarven<strong>Laundry</strong></span>
+              </a>
+              <span class="admin-badge">Admin</span>
+            </div>
+            <nav class="dash-nav">
+              <button class="admin-nav-item active" data-section="overview">
+                <i class="fas fa-th-large"></i> Overview
+              </button>
+              <button class="admin-nav-item" data-section="orders">
+                <i class="fas fa-shopping-bag"></i> Orders
+              </button>
+              <button class="admin-nav-item" data-section="customers">
+                <i class="fas fa-users"></i> Customers
+              </button>
+              <button class="admin-nav-item" data-section="pickups">
+                <i class="fas fa-truck"></i> Pickups
+              </button>
+              <button class="admin-nav-item" data-section="revenue">
+                <i class="fas fa-chart-bar"></i> Revenue
+              </button>
+              <button class="admin-nav-item" data-section="pricing">
+                <i class="fas fa-tag"></i> Pricing
+              </button>
+              <button class="admin-nav-item" data-section="settings">
+                <i class="fas fa-cog"></i> Settings
+              </button>
+              <!-- Extended nav items added by AdminDashboard._addExtendedNav() -->
+              <div class="admin-nav-divider"></div>
+              <button class="admin-nav-item" data-section="staff">
+                <i class="fas fa-users-cog"></i> Staff
+              </button>
+              <button class="admin-nav-item" data-section="analytics">
+                <i class="fas fa-chart-bar"></i> Analytics
+              </button>
+              <button class="admin-nav-item" data-section="transactions">
+                <i class="fas fa-credit-card"></i> Transactions
+              </button>
+            </nav>
+            <div class="dash-sidebar-footer">
+              <a
+                href="#/"
+                class="btn btn-ghost"
+                data-route="/"
+                style="width: 100%; justify-content: center"
+                ><i class="fas fa-home"></i> View Site</a
+              >
+            </div>
+          </aside>
+          <div class="dash-main">
+            <div class="dash-header">
+              <div>
+                <h1 class="dash-welcome">Admin Dashboard</h1>
+                <p class="dash-welcome-sub">
+                  Business overview and management tools.
+                </p>
+              </div>
+              <div style="display: flex; gap: 0.75rem">
+                <button
+                  class="btn btn-ghost"
+                  onclick="Notify.info('Export', 'Report export coming soon.')"
+                >
+                  <i class="fas fa-download"></i> Export
+                </button>
+                <a
+                  href="#/create-order"
+                  class="btn btn-primary"
+                  data-route="/create-order"
+                  ><i class="fas fa-plus"></i> New Order</a
+                >
+              </div>
+            </div>
+            <div id="admin-overview" class="admin-section active">
+              <!-- Metric cards populated by AdminDashboard._loadOverview() -->
+              <div class="admin-metrics-grid"></div>
+              <div class="admin-two-col">
+                <div class="admin-card">
+                  <div class="admin-card-header">
+                    <h3>Recent Orders</h3>
+                    <button
+                      class="btn btn-ghost btn-sm"
+                      onclick="
+                        document.querySelector('[data-section=orders]').click()
+                      "
+                    >
+                      View All
+                    </button>
+                  </div>
+                  <div class="dash-empty-state">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>
+                      No recent orders. Orders will appear here as they come in.
+                    </p>
+                  </div>
+                </div>
+                <div class="admin-card">
+                  <div class="admin-card-header">
+                    <h3>Pending Pickups</h3>
+                    <button
+                      class="btn btn-ghost btn-sm"
+                      onclick="
+                        document.querySelector('[data-section=pickups]').click()
+                      "
+                    >
+                      View All
+                    </button>
+                  </div>
+                  <div class="dash-empty-state">
+                    <i class="fas fa-truck"></i>
+                    <p>No pending pickups scheduled.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="admin-orders" class="admin-section">
+              <div class="dash-panel-header">
+                <h2>All Orders</h2>
+                <div class="dash-filter-row">
+                  <input
+                    type="text"
+                    class="dash-search-input"
+                    placeholder="Search order or customer..."
+                  />
+                  <select class="dash-filter-select">
+                    <option>All Status</option>
+                    <option>Pending</option>
+                    <option>Picked Up</option>
+                    <option>Cleaning</option>
+                    <option>Ready</option>
+                    <option>Delivered</option>
+                    <option>Cancelled</option>
+                  </select>
+                </div>
+              </div>
+              <div class="admin-table-wrap">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>Ref</th>
+                      <th>Customer</th>
+                      <th>Items</th>
+                      <th>Service</th>
+                      <th>Total</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <!-- Populated by AdminDashboard._loadOrdersTable() -->
+                  <tbody class="admin-orders-tbody"></tbody>
+                </table>
+              </div>
+            </div>
+            <div id="admin-customers" class="admin-section">
+              <div class="dash-panel-header">
+                <h2>Customers</h2>
+                <input
+                  type="text"
+                  class="dash-search-input"
+                  placeholder="Search by name, email or phone..."
+                />
+              </div>
+              <div class="admin-table-wrap">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Phone</th>
+                      <th>Orders</th>
+                      <th>Joined</th>
+                    </tr>
+                  </thead>
+                  <!-- Populated by AdminDashboard._loadCustomersTable() -->
+                  <tbody class="admin-customers-tbody"></tbody>
+                </table>
+              </div>
+            </div>
+            <div id="admin-pickups" class="admin-section">
+              <div class="dash-panel-header"><h2>Scheduled Pickups</h2></div>
+              <div class="dash-empty-state">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>No pickups scheduled</h3>
+                <p>
+                  Pickup bookings will appear here once customers start booking.
+                </p>
+              </div>
+            </div>
+            <div id="admin-revenue" class="admin-section">
+              <div class="dash-panel-header"><h2>Revenue Overview</h2></div>
+              <div class="revenue-summary-grid">
+                <div class="revenue-card">
+                  <span class="revenue-label">Today</span
+                  ><span class="revenue-val">—</span>
+                </div>
+                <div class="revenue-card">
+                  <span class="revenue-label">This Week</span
+                  ><span class="revenue-val">—</span>
+                </div>
+                <div class="revenue-card">
+                  <span class="revenue-label">This Month</span
+                  ><span class="revenue-val">—</span>
+                </div>
+                <div class="revenue-card">
+                  <span class="revenue-label">All Time</span
+                  ><span class="revenue-val">—</span>
+                </div>
+              </div>
+              <div class="admin-card" style="margin-top: 2rem">
+                <div class="dash-empty-state">
+                  <i class="fas fa-chart-bar"></i>
+                  <p>
+                    Revenue charts will display here once transactions begin.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="admin-pricing" class="admin-section">
+              <div class="dash-panel-header">
+                <h2>Manage Pricing</h2>
+                <button
+                  class="btn btn-primary"
+                  onclick="
+                    Notify.info(
+                      'Coming Soon',
+                      'Pricing editor coming in Phase 3.',
+                    )
+                  "
+                >
+                  <i class="fas fa-plus"></i> Add Item
+                </button>
+              </div>
+              <div class="admin-card">
+                <div class="dash-empty-state">
+                  <i class="fas fa-tag"></i>
+                  <p>
+                    Pricing management will be available here. Connect your
+                    backend to enable editing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="admin-settings" class="admin-section">
+              <div class="dash-panel-header"><h2>Settings</h2></div>
+              <div class="admin-settings-grid">
+                <div class="admin-settings-card">
+                  <h4><i class="fas fa-building"></i> Business Info</h4>
+                  <div class="form-group">
+                    <label>Business Name</label
+                    ><input type="text" value="Demarven" />
+                  </div>
+                  <div class="form-group">
+                    <label>Contact Email</label
+                    ><input type="email" value="hello@Demarven.ng" />
+                  </div>
+                  <div class="form-group">
+                    <label>Phone</label
+                    ><input type="tel" value="+234 801 234 5678" />
+                  </div>
+                  <div class="form-group">
+                    <label>Address</label
+                    ><input
+                      type="text"
+                      value="14 Adeola Odeku, Victoria Island"
+                    />
+                  </div>
+                  <button
+                    class="btn btn-primary"
+                    onclick="Notify.success('Saved', 'Business info updated.')"
+                  >
+                    Save Changes
+                  </button>
+                </div>
+                <div class="admin-settings-card">
+                  <h4><i class="fas fa-truck"></i> Delivery Settings</h4>
+                  <div class="form-group">
+                    <label>Free Delivery Threshold (₦)</label
+                    ><input type="number" value="5000" />
+                  </div>
+                  <div class="form-group">
+                    <label>Flat Delivery Fee (₦)</label
+                    ><input type="number" value="500" />
+                  </div>
+                  <div class="form-group">
+                    <label>Express Surcharge (%)</label
+                    ><input type="number" value="50" />
+                  </div>
+                  <button
+                    class="btn btn-primary"
+                    onclick="
+                      Notify.success('Saved', 'Delivery settings updated.')
+                    "
+                  >
+                    Save Changes
+                  </button>
+                </div>
+                <div class="admin-settings-card">
+                  <h4><i class="fas fa-clock"></i> Operating Hours</h4>
+                  <div class="form-group">
+                    <label>Mon – Sat</label
+                    ><input type="text" value="7:00 AM – 9:00 PM" />
+                  </div>
+                  <div class="form-group">
+                    <label>Sunday</label
+                    ><input type="text" value="9:00 AM – 6:00 PM" />
+                  </div>
+                  <div class="form-group">
+                    <label>Last Pickup Time</label
+                    ><input type="time" value="10:00" />
+                  </div>
+                  <button
+                    class="btn btn-primary"
+                    onclick="Notify.success('Saved', 'Hours updated.')"
+                  >
+                    Save Changes
+                  </button>
+                </div>
+                <div class="admin-settings-card">
+                  <h4><i class="fas fa-bell"></i> Notifications</h4>
+                  <label class="checkbox-label" style="margin-bottom: 0.75rem"
+                    ><input type="checkbox" checked /> SMS on order
+                    placed</label
+                  >
+                  <label class="checkbox-label" style="margin-bottom: 0.75rem"
+                    ><input type="checkbox" checked /> SMS on pickup
+                    complete</label
+                  >
+                  <label class="checkbox-label" style="margin-bottom: 0.75rem"
+                    ><input type="checkbox" checked /> SMS on delivery</label
+                  >
+                  <label class="checkbox-label" style="margin-bottom: 0.75rem"
+                    ><input type="checkbox" /> Email newsletters</label
+                  >
+                  <button
+                    class="btn btn-primary"
+                    onclick="
+                      Notify.success(
+                        'Saved',
+                        'Notification preferences updated.',
+                      )
+                    "
+                  >
+                    Save Changes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Extended sections populated by AdminDashboard._addExtendedNav() / _loadSection() -->
+            <div id="admin-staff" class="admin-section"></div>
+            <div id="admin-analytics" class="admin-section"></div>
+            <div id="admin-transactions" class="admin-section"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== STAFF DASHBOARD ==================== -->
+      <div id="page-staff-dashboard" class="page">
+        <div class="dash-layout">
+          <aside class="dash-sidebar staff-sidebar">
+            <div class="dash-sidebar-logo">
+              <a href="#/" data-route="/" class="nav-logo">
+                <span class="logo-mark">DM</span>
+                <span class="logo-text">Demarven<strong>Laundry</strong></span>
+              </a>
+              <span class="staff-badge">Staff</span>
+            </div>
+            <nav class="dash-nav">
+              <button class="staff-nav-item active" data-section="overview">
+                <i class="fas fa-th-large"></i> Overview
+              </button>
+              <button class="staff-nav-item" data-section="kanban">
+                <i class="fas fa-columns"></i> Board
+              </button>
+              <button class="staff-nav-item" data-section="queue">
+                <i class="fas fa-list-ul"></i> Work Queue
+              </button>
+            </nav>
+            <div class="dash-sidebar-footer">
+              <a
+                href="#/"
+                class="btn btn-ghost"
+                data-route="/"
+                style="width: 100%; justify-content: center"
+              >
+                <i class="fas fa-home"></i> Back to Site
+              </a>
+            </div>
+          </aside>
+          <div class="dash-main">
+            <div class="dash-header">
+              <div>
+                <h1 class="dash-welcome">Good day!</h1>
+                <p class="dash-welcome-sub">
+                  Here's your work summary for today.
+                </p>
+              </div>
+            </div>
+            <!-- Sections populated by StaffDashboard._loadSection() -->
+            <div id="staff-overview" class="staff-section active"></div>
+            <div id="staff-kanban" class="staff-section"></div>
+            <div id="staff-queue" class="staff-section"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== CHECKOUT PAGE ==================== -->
+      <div id="page-checkout" class="page">
+        <div class="page-hero-sm">
+          <div class="container">
+            <span class="page-hero-eyebrow">Secure Payment</span>
+            <h1>Checkout</h1>
+            <p>Review your order and complete payment securely.</p>
+          </div>
+        </div>
+        <section class="section-pad">
+          <!-- Populated by CheckoutPage.init() based on currentOrder state -->
+          <div class="container" id="checkout-body"></div>
+        </section>
+      </div>
+
+      <!-- ==================== RECEIPT PAGE ==================== -->
+      <div id="page-receipt" class="page">
+        <div class="page-hero-sm">
+          <div class="container">
+            <span class="page-hero-eyebrow">Payment Confirmed</span>
+            <h1>Your Receipt</h1>
+            <p>Keep this for your records.</p>
+          </div>
+        </div>
+        <section class="section-pad">
+          <!-- Populated by ReceiptPage.init() based on currentReceipt state -->
+          <div class="container" id="receipt-body"></div>
+        </section>
+      </div>
+
+      <!-- ==================== TRANSACTIONS PAGE ==================== -->
+      <div id="page-transactions" class="page">
+        <div class="page-hero-sm">
+          <div class="container">
+            <span class="page-hero-eyebrow">Payments</span>
+            <h1>Transactions</h1>
+            <p>Complete history of all payment transactions.</p>
+          </div>
+        </div>
+        <section class="section-pad">
+          <!-- Populated by TransactionsPage.init() -->
+          <div class="container" id="transactions-body"></div>
+        </section>
+      </div>
+
+      <!-- ==================== 404 PAGE ==================== -->
+      <div id="page-404" class="page">
+        <div class="auth-page">
+          <div class="auth-card" style="text-align: center">
+            <div
+              style="
+                font-size: 5rem;
+                font-weight: 900;
+                color: var(--coral);
+                font-family: var(--font-display);
+              "
+            >
+              404
+            </div>
+            <h2>Page Not Found</h2>
+            <p>The page you're looking for doesn't exist.</p>
+            <a
+              href="#/"
+              class="btn btn-primary"
+              data-route="/"
+              style="margin-top: 1rem"
+              >Go Home</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="main-footer">
+      <div class="footer-top">
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <a href="#/" class="nav-logo footer-logo" data-route="/">
+              <span class="logo-mark">DM</span>
+              <span class="logo-text">Demarven<strong>Laundry</strong></span>
+            </a>
+            <p>
+              Lagos's most trusted premium laundry and dry cleaning service —
+              delivered to your door.
+            </p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#/" data-route="/">Home</a></li>
+              <li>
+                <a href="#/pricing" data-route="/pricing">Services & Pricing</a>
+              </li>
+              <li>
+                <a href="#/track-order" data-route="/track-order"
+                  >Track Order</a
+                >
+              </li>
+              <li>
+                <a href="#/book-pickup" data-route="/book-pickup"
+                  >Book Pickup</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li>
+                <a href="#/pricing" data-route="/pricing">Dry Cleaning</a>
+              </li>
+              <li>
+                <a href="#/pricing" data-route="/pricing">Wash & Fold</a>
+              </li>
+              <li>
+                <a href="#/pricing" data-route="/pricing"
+                  >Ironing & Pressing</a
+                >
+              </li>
+              <li>
+                <a href="#/pricing" data-route="/pricing">Stain Removal</a>
+              </li>
+              <li>
+                <a href="#/pricing" data-route="/pricing"
+                  >Bedding & Curtains</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Get exclusive offers and laundry tips in your inbox.</p>
+            <form class="newsletter-form" id="newsletter-form" novalidate>
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <div class="footer-contact-quick">
+              <div>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+2348012345678">+234 801 234 5678</a>
+              </div>
+              <div>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@Demarven.ng">hello@Demarven.ng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>&copy; 2025 Demarven Laundry. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- NOTIFICATION TOASTS -->
+    <div id="notification-container" class="notification-container"></div>
+
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- NOTIFICATION CENTRE PANEL (was injected by NotificationCenter._injectHTML()) -->
+    <div class="notif-overlay" id="notif-overlay"></div>
+    <div class="notif-center-panel" id="notif-center-panel">
+      <div class="notif-center-header">
+        <h3>
+          <i
+            class="fas fa-bell"
+            style="color: var(--coral); margin-right: 0.4rem"
+          ></i>
+          Notifications
+        </h3>
+        <div class="notif-center-actions">
+          <button id="notif-mark-all">
+            <i class="fas fa-check-double"></i> Mark all read
+          </button>
+          <button id="notif-panel-close"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+      <div class="notif-list" id="notif-list">
+        <div class="notif-empty">
+          <i class="fas fa-bell-slash"></i>
+          <p>Loading notifications…</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORDER DETAIL DRAWER (was injected by OrderDrawer.init()) -->
+    <div class="order-overlay" id="order-overlay"></div>
+    <div class="order-detail-drawer" id="order-detail-drawer">
+      <!-- Content populated dynamically by OrderDrawer.open(order) -->
+    </div>
+
+    <!-- GLOBAL MODAL (was injected by Modal.init()) -->
+    <div class="modal-overlay" id="global-modal-overlay">
+      <div class="modal-card" id="global-modal-card">
+        <!-- Content populated dynamically by Modal.open({ title, body, footer }) -->
+      </div>
+    </div>
+
+    <!-- PAYMENT MODAL (was injected by PaymentFlow.init()) -->
+    <div class="payment-modal" id="payment-modal">
+      <div class="payment-modal-card" id="payment-modal-card">
+        <!-- Content populated dynamically by PaymentFlow._show(state, order) -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
